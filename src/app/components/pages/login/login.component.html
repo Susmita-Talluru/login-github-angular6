@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayout="row" fxFlexAlign="center center">
+    <span>Teste Banco Pan</span>
+    <span class="spacer"></span>
+    <mat-icon>account_circle</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="wrap ">
+  <mat-card class="box-login center">
+    <mat-card-title>Login com Github</mat-card-title>
+    <mat-card-content>
+      <a [href]="urlLogin" mat-raised-button [color]="'primary'">
+        <app-icon [name]="'github'"></app-icon> <span>Logar com Github</span>
+      </a>
+    </mat-card-content>
+  </mat-card>
+</div>
