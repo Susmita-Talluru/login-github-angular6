@@ -1,12 +1,12 @@
 import {Injectable} from '@angular/core';
 import {
   HttpInterceptor, HttpRequest, HttpHandler, HttpSentEvent,
-  HttpEvent, HttpHeaderResponse, HttpProgressEvent,
+  HttpHeaderResponse, HttpProgressEvent,
   HttpResponse, HttpUserEvent
 } from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import {AuthService} from '../services/auth.service';
-import { tap} from 'rxjs/operators';
+import {tap} from 'rxjs/operators';
 
 @Injectable()
 
@@ -17,7 +17,7 @@ export class TokenInterceptor implements HttpInterceptor {
   constructor(private authService: AuthService) {
 
   }
-
+ß
   addToken(req: HttpRequest<any>, token: string, excludeTokenInterceptor?): HttpRequest<any> {
     if (excludeTokenInterceptor || !token) {
       return req;

@@ -15,7 +15,7 @@ export class ApiService {
   _baseGithub = 'https://github.com';
   _baseApiGithub = 'https://api.github.com';
 
-  constructor(private _http: HttpClient, public authService: AuthService) {
+  constructor(private _http: HttpClient) {
   }
 
   getUserRepo(): Observable<any> {
@@ -28,8 +28,7 @@ export class ApiService {
       .set('code', code)
       .set('accept', 'json')
       .set('client_secret', environment.client_secret);
-
-    return this._http.post([this._baseGithub, 'login/oauth/access_token'].join('/'), body, {
+    return this._http.post(['api/login/oauth/access_token'].join('/'), body, {
       responseType: 'text',
       headers: new HttpHeaders()
         .set('Content-Type', 'application/x-www-form-urlencoded')

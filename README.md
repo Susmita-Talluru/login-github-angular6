@@ -6,8 +6,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `npm install`
 
 ## Server
-Run `ng serve --prod` for a dev server. Navigate to `http://localhost:4200/`.
-
-## Create a dist
-Run `ng build --prod`
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 
